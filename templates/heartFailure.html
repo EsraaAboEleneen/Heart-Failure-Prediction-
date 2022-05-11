@@ -33,7 +33,7 @@
 
 
 
-    <link rel="icon" href="../images/tp227-06.jpg">
+    <link rel="icon" href="{{url_for('static',filename='/images/tp227-06.jpg')}}">
 
 
 
@@ -45,9 +45,7 @@
     <link href="{{url_for('static',filename='dist/common/vendor.css')}}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{url_for('static',filename='dist/common/app.css')}}">
         <link rel="stylesheet" href="{{url_for('static',filename='dist/common/header&footer.css')}}">
-    <link href="../dist/common/vendor.css" rel="stylesheet" />
-    <link href="../dist/common/app.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../dist/common/header&footer.css">
+
 
     
     
@@ -62,15 +60,11 @@
            
            <div class="container">
                
-            <div class="logo">
-                <a href="index.html">
-                    <img src="{{url_for('static',filename='/images/tp227-06.jpg')}}" alt="home">
-                </a>
-                
-            </div><!-- ./logo -->
+
+               <!-- ./logo -->
                <div class="logo">
                    <a href="../index.html">
-                       <img src="../images/tp227-06.jpg" alt="home">
+                       <img src="{{url_for('static',filename='/images/tp227-06.jpg')}}" alt="home">
                    </a>
                    
                </div><!-- ./logo -->
